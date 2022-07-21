@@ -44,12 +44,6 @@ public class Clues {
         return category;
     }
 
-    public String getCategoryString(){
-
-       return /*"\nCategoryID-" + getCategory().getId() + */
-               "\n" +getCategory().getTitle() +  "\nCanon-" + getCategory().getCanon();
-    }
-
     public void setCategory(Category category) {
         this.category = category;
     }
@@ -109,9 +103,8 @@ public class Clues {
     public void setId(String id) {
         this.id = id;
     }
+    public String getCategoryString(){
+        return  "\n" +getCategory().getTitle();
+    }
 
-//    public Clues getCLueFromID(){
-//    Clues clue = new Clues();
-//
-//    }
 }
